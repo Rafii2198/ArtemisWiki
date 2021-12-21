@@ -36,3 +36,13 @@ We currently have a quite okay way of enabling/disabling individual features. I 
 * Really has a proper way of splitting down the functionality.
 
 At the very least, I believe the current structure of "modules", and putting almost all functionality into "overlays", serves little purpose, and only confuses the code base and the settings UI. My suggestion is basically starting with a flat set of booleans to enable/disable certain functionality, and then we can work with finding a logical way of grouping these in the Settings UI. 
+
+## External data
+
+Static, non-code resources that can change independently of the code base, like the world map, item database, map POIs, etc, should not be included in the mod itself, but downloaded and cached locally.
+
+Such resources should be downloaded from a single Resource Provider instance that we control (read: Athena). If the source of the data is some third party (the Wynncraft API counts as a third party in this case), we will still download the data from the third party and store it on our Resource Provider. We will *not* access static data directly from any other instance.
+
+Data stored on our Resource Provider should be organized in a comprehensible way, and should use standard format. For most textual data, this means JSON.
+
+Dynamic data (like server uptime) will still need to be provided by external services (unless we choose to proxy/cache even such data?). Such data retrieval needs to be handled with extra care. We can't affect its availability. It can change format suddenly and unexpectedly. So we must handle failures in retrieving and parsing such data gracefully.
