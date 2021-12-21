@@ -16,3 +16,8 @@
 * Show compass target as a marker on Worldmap and Minimap
 * Show distance to compass target on minimap (⚠️ consider showing on world map as well)
 * Render compass target as beacon in the world
+
+## Discord
+* Rich presence integration
+* Let user invite people to join their game
+* Automatically join the world and party when clicking on invite
