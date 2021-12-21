@@ -6,7 +6,7 @@
   *  Warning for classPath deprecated
 
 ## Porting admin tasks
-* Make a comprehensive list of Legacy Wynntils features
+* Make a comprehensive list of [[Legacy Wynntils features]]
 
 ## Starter features to implement
 ### 1. Wyncraft connection button
