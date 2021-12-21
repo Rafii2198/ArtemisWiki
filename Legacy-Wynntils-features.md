@@ -30,4 +30,23 @@
 * Filter the various Wynncraft messages to the "Game Update ticker"
 * Show message timestamps
 
+## Music / Sound
+* Play a sound whenever a mythic is found in a lootchest (⚠️ consider if we can let user choose from which tier this sound should play)
+* Play a sound whenever the user summons their horse with the keybind macro
+* Offline music player
+
+## Lootruns
+⚠️ This list has to be completed/changed with all lootrun features, I do not know them all too well. ~ Chromium
+* Alias for the `/lootrun` command is `/lr`
+* Let user create lootruns using `/lootrun record` command 
+* Open the lootrun folder using `/lootrun folder`
+* Start a lootrun using `/lootrun start <name>` command
+* Stop a lootrun using  `/lootrun stop` command
+* Show path in-game when a lootrun is active
+
+
+
+
+
+
 
