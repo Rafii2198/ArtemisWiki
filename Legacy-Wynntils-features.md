@@ -21,3 +21,13 @@
 * Rich presence integration
 * Let user invite people to join their game
 * Automatically join the world and party when clicking on invite
+
+## Chat
+* Let user create custom chat tabs or choose from a preset (e.g.: Global, Guild, Party; Global, G/P, Shouts; ...)
+* Let user chat in different Wynncraft languages like Wynnic and Gavelian
+* Translate Wynnic or Gavelian when hovering over the text message
+* Let user click on party/guild invites or trade/duel messages to accept
+* Filter the various Wynncraft messages to the "Game Update ticker"
+* Show message timestamps
+
+
