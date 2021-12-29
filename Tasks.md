@@ -1,9 +1,5 @@
 ## Framework tasks
 * Setup IDE integration for running in debugger with accessToken
-* Setup Github Actions CI
-* Check up on Architectury gradle issues:
-  *  Mixin exception for Forge
-  *  Warning for classPath deprecated
 
 ## Porting admin tasks
 * Make a comprehensive list of [[Legacy Wynntils features]]
