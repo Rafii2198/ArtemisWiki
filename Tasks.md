@@ -1,6 +1,3 @@
-## Framework tasks
-* Setup IDE integration for running in debugger with accessToken
-
 ## Porting admin tasks
 * Make a comprehensive list of [[Legacy Wynntils features]]
 
