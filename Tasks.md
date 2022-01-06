@@ -4,6 +4,7 @@
 ## Starter features to implement
 ### 1. Wyncraft connection button
 * **Rationale:** Adding button to existing menu. Loading texture resource. Working with Minecraft connection internals. Easy to test and debug, just start Minecraft.
+* **Status:** implemented
 
 ### 2. World map
 * **Rationale:** create own screen GUI. Load static content from Athena. No WC server connection truly needed. Load Wynntils texture resource for the arrow representing the player's location. sUseful functionality.
