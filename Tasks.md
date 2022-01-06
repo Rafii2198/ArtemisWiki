@@ -1,3 +1,7 @@
+## Foundation tasks
+* Item Recieved Events for immediate item modification or detection
+
+
 ## Porting admin tasks
 * Make a comprehensive list of [[Legacy Wynntils features]]
 
