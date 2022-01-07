@@ -29,6 +29,6 @@
 * **Rationale:** In-world rendering. Tight integration with Minecraft internals to track movement. Command handling using Brigadier. Architectural decisions about large amount of abstract code. Useful functionality.
 * **Initial limitations:** Do not draw lootrun on world map. No chest detection or display needed.
 
-## Implemented features
-### 1. Wyncraft connection button
+## Implemented features ✅
+Wyncraft connection button
 * **Rationale:** Adding button to existing menu. Loading texture resource. Working with Minecraft connection internals. Easy to test and debug, just start Minecraft.
