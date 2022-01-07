@@ -12,7 +12,7 @@ Unfortunately both of these in principle will sacrifice 1.12 compatibility. :-(
 **Cons:** We will be stuck with Forge, despite a huge craving for Fabric support on 1.16 and above.
 The current bad design will be with us for the forseeable future.
 
-## Rewrite from scratch
+## Rewrite from scratch (What is currently going on)
 
 **Pros:** We will support both Fabric and Forge. We will be able to create a new, better architecture adapted
 to our needs. This will likely make future upgrades to different versions easier. It might be possible to "trivially"
