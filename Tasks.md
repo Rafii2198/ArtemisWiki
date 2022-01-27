@@ -7,8 +7,8 @@
 * Make a comprehensive list of [[Legacy Wynntils features]]
 
 ## Starter features to implement
-### 1. Item Guesses
-* **Rational:** easy to implement. Focus more on static content loading from Athena before working on world map.
+### 1. Health Potion Blocker
+* **Rationale:** easy to do
 
 ### 2. World map
 * **Rationale:** create own screen GUI. Load static content from Athena. No WC server connection truly needed. Load Wynntils texture resource for the arrow representing the player's location. Useful functionality.
@@ -32,3 +32,7 @@
 ## Implemented features ✅
 Wyncraft connection button
 * **Rationale:** Adding button to existing menu. Loading texture resource. Working with Minecraft connection internals. Easy to test and debug, just start Minecraft.
+
+Item Guesses
+* **Rational:** easy to implement. Focus more on static content loading from Athena before working on world map.
+
