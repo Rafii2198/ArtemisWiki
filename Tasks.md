@@ -1,5 +1,4 @@
 ## Foundation tasks
-* Implement a logging system
 * Item Recieved Events for immediate item modification or detection
 
 
