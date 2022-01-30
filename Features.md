@@ -5,8 +5,8 @@
 
 [Image] (Optional)
 Configs: (Put N/A if none)
-* Idea 1
-* Idea 2
+* Config 1
+* Config 2
 ```
 
 # User Features
@@ -14,64 +14,51 @@ Configs: (Put N/A if none)
 ### Wynncraft Button
 > Adds a fancy button to the main page to allow immediately joining wynncraft from the main menu
 
-[Image] (TODO)
+Image (TODO)
 Configs: N/A
 
-### Feature Name
-> Description
+### Soul Point Timer
+> Appends info about the time till the next soul point in the lore 
 
-[Image] (Optional)
-Configs: (Put N/A if none)
-* Idea 1
-* Idea 2
+Image
+Configs: N/A
 
-### Feature Name
-> Description
+### Item Guess Feature
+> Adds item guesses to unidentified items
 
-[Image] (Optional)
-Configs: (Put N/A if none)
-* Idea 1
-* Idea 2
+Image
+Configs: N/A
 
-### Feature Name
-> Description
 
-[Image] (Optional)
-Configs: (Put N/A if none)
-* Idea 1
-* Idea 2
+### Health Potion Blocker
+> Prevents drinking health potions at full health
 
-### Feature Name
-> Description
+Image
+Configs: N/A
 
-[Image] (Optional)
-Configs: (Put N/A if none)
-* Idea 1
-* Idea 2
+### Gamma Bright
+> Adds a keybind (default "G") which toggles on and off full brightness
+
+Image
+Configs: N/A
 
 
 # Development Features
 
-### Feature Name
-> Description
+### Connection Progress
+> Logs changes in the world state
 
-[Image] (Optional)
-Configs: (Put N/A if none)
-* Idea 1
-* Idea 2
+Configs:
+* Config 1
+* Config 2
 
-### Feature Name
-> Description
+### Key Bind Test
+> Adds a sticky and non-sticky keybind which send random splash texts to chat on press
 
-[Image] (Optional)
-Configs: (Put N/A if none)
-* Idea 1
-* Idea 2
+Image
+Configs: N/A
 
-### Feature Name
-> Description
+### Packet Debugger
+> Logs all packets received and sent
 
-[Image] (Optional)
-Configs: (Put N/A if none)
-* Idea 1
-* Idea 2
+Configs: N/A
