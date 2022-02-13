@@ -20,6 +20,9 @@ Configs: N/A
 ### Soul Point Timer
 > Appends info about the time till the next soul point in the lore 
 
+### Player ghost transparency
+> Makes player ghosts translucent
+
 Image<br>
 Configs: N/A
 
