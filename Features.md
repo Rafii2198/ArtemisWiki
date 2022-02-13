@@ -36,7 +36,6 @@ Configs: N/A
 ### Health Potion Blocker
 > Prevents drinking health potions at full health
 
-Image<br>
 Configs: N/A
 
 ### Gamma Bright
@@ -45,18 +44,19 @@ Configs: N/A
 Image<br>
 Configs: N/A
 
-
 # Development Features
 
 ### Connection Progress
 > Logs changes in the world state
-<br>
-Configs
+
+Configs: N/A
 
 ### Key Bind Test
 > Adds test keybinds for making sure that they work
+
 Configs: N/A
 
 ### Packet Debugger
 > Logs all packets received and sent
+
 Configs: N/A
