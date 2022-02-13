@@ -32,7 +32,6 @@ Configs: N/A
 Image<br>
 Configs: N/A
 
-
 ### Health Potion Blocker
 > Prevents drinking health potions at full health
 
@@ -41,7 +40,6 @@ Configs: N/A
 ### Gamma Bright
 > Adds a keybind (default "G") which toggles on and off full brightness
 
-Image<br>
 Configs: N/A
 
 # Development Features
