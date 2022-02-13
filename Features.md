@@ -14,32 +14,32 @@ Configs: (Put N/A if none)
 ### Wynncraft Button
 > Adds a fancy button to the main page to allow immediately joining wynncraft from the main menu
 
-Image (TODO)
+Image (TODO)<br>
 Configs: N/A
 
 ### Soul Point Timer
 > Appends info about the time till the next soul point in the lore 
 
-Image
+Image<br>
 Configs: N/A
 
 ### Item Guess Feature
 > Adds item guesses to unidentified items
 
-Image
+Image<br>
 Configs: N/A
 
 
 ### Health Potion Blocker
 > Prevents drinking health potions at full health
 
-Image
+Image<br>
 Configs: N/A
 
 ### Gamma Bright
 > Adds a keybind (default "G") which toggles on and off full brightness
 
-Image
+Image<br>
 Configs: N/A
 
 
@@ -47,18 +47,13 @@ Configs: N/A
 
 ### Connection Progress
 > Logs changes in the world state
-
-Configs:
-* Config 1
-* Config 2
+<br>
+Configs
 
 ### Key Bind Test
-> Adds a sticky and non-sticky keybind which send random splash texts to chat on press
-
-Image
+> Adds test keybinds for making sure that they work
 Configs: N/A
 
 ### Packet Debugger
 > Logs all packets received and sent
-
 Configs: N/A
