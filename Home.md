@@ -9,3 +9,4 @@ Dev Stuff
 * [[Workflow for the Artemis port]]
 * [[High level architecture and design for Artemis]]
 * [[Tasks]]
+* [[Custom ItemStacks and ItemProperty]]
