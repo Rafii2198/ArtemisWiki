@@ -33,7 +33,7 @@ This list is by no means complete, but it's a kind of simple reminder of functio
 * chat tab manager gui
    - create, delete, reorder tabs
    - change which content goes to which tab
-* ~~play popoff sound (blaze hurt) if you can't put on some armor~~ **Reason:** Added by Wynncraft
+* ~~play popoff sound (blaze hurt) if you can't put on some armor~~ *Reason: Added by Wynncraft*
 * print message to chat when clicking with soul point or compass. (do we need this?)
 * /compass command: `/compass [<x> [<y>] <z> | <direction> | clear | share [location] [guild|party|user]`
 * changelog functionality, incl `/wynntils changelog`
