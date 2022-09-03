@@ -6,7 +6,6 @@ This list is by no means complete, but it's a kind of simple reminder of functio
 * Sounds: horse whistle, war horn, quest book page turning etc
 * Support for game mode like iron man (do to what? shown in character selector)
 * Inventory data, such as total amount of money, ingredients etc
-* Settings GUI
 * Save settings to cloud (?)
 * Item database
 * Load resource pack at startup
@@ -33,11 +32,10 @@ This list is by no means complete, but it's a kind of simple reminder of functio
 * chat tab manager gui
    - create, delete, reorder tabs
    - change which content goes to which tab
-* ~~play popoff sound (blaze hurt) if you can't put on some armor~~ *Reason: Added by Wynncraft*
 * print message to chat when clicking with soul point or compass. (do we need this?)
 * /compass command: `/compass [<x> [<y>] <z> | <direction> | clear | share [location] [guild|party|user]`
 * changelog functionality, incl `/wynntils changelog`
-* Automatically turn of /toggle music and /toggle autotrack
+* Automatically turn off /toggle music and /toggle autotrack
 * totem tracker
    - track mob totem location and time
    - track shaman totem location (?) and time
@@ -49,3 +47,4 @@ This list is by no means complete, but it's a kind of simple reminder of functio
 * track other players (are they mutual friends with us; track position on server)
 * ping manager (measure time from sending `/toggle` to getting response)
 * player list ("tab" key pressed) replacement
+* Wynncraft 2.0 changes.. (To be updated)
