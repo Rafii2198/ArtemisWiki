@@ -11,7 +11,6 @@ This list is by no means complete, but it's a kind of simple reminder of functio
   - chose between stable and beta (cutting edge) channels
 * Music from MP3 instead
 * Chat manager:
-   - timestamp on messages
    - play sound on mention (getMasterRecord(SoundEvents.BLOCK_NOTE_PLING, 1.0F)) and mark chat tab)
    - change chat background transparency
    - stack repeating messages
