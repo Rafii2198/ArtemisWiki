@@ -4,6 +4,7 @@ User Stuff
 * [[Features]]
 
 Dev Stuff
+* [[Class and package structure]]
 * [[Types of changes between 1.12 and 1.16]]
 * [[Possible ways forward]]
 * [[Workflow for the Artemis port]]
