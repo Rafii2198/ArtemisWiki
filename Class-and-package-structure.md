@@ -117,3 +117,5 @@ Every command must be registered in `core.commands.ClientCommandManager`.
 ### `gui` (**Screens**)
 
 **Screens** are the basic GUI unit of Minecraft. We provide several custom screens, like the Main Map, or Character Selector. Screens are initiated (and in a sense "owned") by Features.
+
+The `gui` package has not yet been subject to as clear structure rules as the rest of the code base. For instance, this package currently also contains `gui.render`, which is our rendering support. This is subject to change.
