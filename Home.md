@@ -7,6 +7,7 @@ Welcome to the Artemis project wiki!
 
 ### Development plans / notes
 * [[Formal checking wish list]]
+* [[Legacy Wynntils features]]
 
 ### Other resources
 * [[Archive]]
