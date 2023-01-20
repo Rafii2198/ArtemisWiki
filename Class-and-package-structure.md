@@ -24,6 +24,10 @@ Artemis consists of a well-specified hierarchy of "components". It looks like th
 Features, Functions, Commands, Screens
 ```
 
+**Managers** are responsible for providing basic functionality to the mod. It could be network connectivity, handling configuration, crash reporting, etc. 
+
+**Handlers** are an intermediate step between Managers and Models. They are needed when a single Minecraft feature (such as the action chat line, boss bars or scoreboard) is of interest to  several unrelated Wynncraft models. They serve as a switchboard, splitting up the Minecraft part according to Wynncraft rules, and dispatching the parts out to different models. Handles should ideally know as little as possible about the *content* of these Minecraft structures, but it will need to know the Wynncraft *structure*, e.g. how coordinates are displayed in the middle of the action bar, or how the scoreboard contains different segments, such as the active quest and daily objectives.
+
 ### `core`
 
 Core is responsible for the framework/skeleton upon which the rest of the Wynntils mod depends. It does not deal with anything specifically related to Wynncraft, and could in theory be used to build another, similar mod for other kinds of servers. 
