@@ -13,7 +13,7 @@ The top level contain these packages:
 * `commands`
 * `gui`
 
-They all have well-specified content.
+The content of each of these packages is discussed in detail in this document.
 
 ### Components
 
