@@ -28,7 +28,7 @@ Artemis consists of a well-specified hierarchy of "components". It looks like th
 Features, Functions, Commands, Screens
 ```
 
-**Managers** are responsible for providing basic functionality to the mod. It could be network connectivity, handling configuration, crash reporting, etc. 
+**Managers** are responsible for providing basic functionality to the mod. It could be network connectivity, handling configuration, crash reporting, etc. Managers are singletons, that are created and kept by the `core.components.Managers` class. As such, the correct way to reference a manager is e.g. `Manager.Net`. (Despite the upper case initial, this is an instance variable.) Managers are located in the parts of the `core` package they belong to.
 
 **Handlers** are an intermediate step between Managers and Models. See [handlers](#handlers).
 
@@ -102,6 +102,18 @@ Handlers should only be used by Models, not Features.
 
 **Models** are the high level representation of Artemis full knowledge about the Wynncraft world. The models should represent concepts that a Wynncraft player would use to describe the game, e.g. terms like "mana", "water damage", "haul spell", "mythic", "hub" or "daily crates".
 Models can, and will likely need to, use Managers and Handlers, but also listen to events from `mc`, and occasionally also interact more directly with other aspects of Minecraft internals. They should not, however, have anything to do with e.g. how these concepts are presented on the screen. The basic representation of models is an abstract one, with classes tailored to describing the Wynncraft world in Wynncraft terms.
+
+The `models` package contains a number of subpackages, each pertaining to a different area of the Wynncraft world. Examples include `ingredients`, `discoveries`, `map` and `character`. This division is somewhat arbitrarily and subjective, but it helps keep apart unrelated areas, and keep related functionality together.
+
+In general, each such package will have a Model class. For instance, in `emeralds` you would expect an `EmeraldModel`, which is the main entrypoint for Features (or other Models) that need to interact with this model. Models are singletons, that are created and kept by the `core.components.Models` class. As such, the correct way to reference a model is e.g. `Models.Emeralds`. (Despite the upper case initial, this is an instance variable.)
+
+Each individual model packages might contain any of these standard subpackages:
+
+* `event` -- for externally visible events (i.e. sent to listeners outside the model)
+* `type` -- for basic types used by the model (more or less the enums of the model)
+* `profile` -- for data read from json online sources 
+
+Additional subpackages are implementation dependent, and is used to organize the specific model in question.
 
 ### `features`
 
