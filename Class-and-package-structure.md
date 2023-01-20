@@ -26,10 +26,9 @@ Features, Functions, Commands, Screens
 
 **Managers** are responsible for providing basic functionality to the mod. It could be network connectivity, handling configuration, crash reporting, etc. 
 
-**Handlers** are an intermediate step between Managers and Models. They are needed when a single Minecraft feature (such as the action chat line, boss bars or scoreboard) is of interest to  several unrelated Wynncraft models. They serve as a switchboard, splitting up the Minecraft part according to Wynncraft rules, and dispatching the parts out to different models. Handles should ideally know as little as possible about the *content* of these Minecraft structures, but it will need to know the Wynncraft *structure*, e.g. how coordinates are displayed in the middle of the action bar, or how the scoreboard contains different segments, such as the active quest and daily objectives.
+**Handlers** are an intermediate step between Managers and Models. See [handlers](#handlers).
 
-**Models** are the high level representation of Artemis full knowledge about the Wynncraft world. The models should represent concepts that a Wynncraft player would use to describe the game, e.g. terms like "mana", "water damage", "haul spell", "mythic", "hub" or "daily crates".
-Models can, and will likely need to, use Managers and Handlers, but also listen to events from `mc`, and occasionally also interact more directly with other aspects of Minecraft internals. They should not, however, have anything to do with e.g. how these concepts are presented on the screen. The basic representation of models is an abstract one, with classes tailored to describing the Wynncraft world in Wynncraft terms.
+**Models** are the high level representation of Artemis full knowledge about the Wynncraft world. See [models](#models).
 
 Finally, **Features, Functions, Commands, Screens** are what the user will actually interact with. They use primarily Models, but sometimes also Managers, to provide their functionality. (Not Handlers, though, they should be used by Models only.)
 
@@ -82,3 +81,12 @@ The `mc.mixin` package contains all our mixins, and only mixins. (There are also
 Mixin classes should be `public abstract`, and mixin methods should be `private`. `@Inject` mixins should be used, if at all possible. The method name should be the target method name followed by `Pre` or `Post`, depending on if the injection is at `HEAD` or `RETURN`. The mixin method should only call `EventFactory.on<BaseEventName>`, and possibly cancel the mixin if the event is cancelled. The `EventFactory.on<BaseEventName>` method should create and post a new event of type `<BaseEventName>Event`. Exceptions from these rules are allowed if absolutely needed, but should be kept to a minimum. Keeping to this system serves both to minimize conflict with other mods, to make the code easy to follow due to the conventions, and to facilitate debugging and hot-swapping of code.
 
 The `mc.event` package contain all events sent from the mixins. `utils` contains some Minecraft-tied utilities, like `Component` to `String` conversion, `ItemStack` manipulation etc, and `objects` finally contain a few helper classes that are tightly coupled to Minecraft internals.
+
+### `handlers`
+
+**Handlers** are an intermediate step between Managers and Models. They are needed when a single Minecraft feature (such as the action chat line, boss bars or scoreboard) is of interest to  several unrelated Wynncraft models. They serve as a switchboard, splitting up the Minecraft part according to Wynncraft rules, and dispatching the parts out to different models. Handles should ideally know as little as possible about the *content* of these Minecraft structures, but it will need to know the Wynncraft *structure*, e.g. how coordinates are displayed in the middle of the action bar, or how the scoreboard contains different segments, such as the active quest and daily objectives.
+
+### `models`
+
+**Models** are the high level representation of Artemis full knowledge about the Wynncraft world. The models should represent concepts that a Wynncraft player would use to describe the game, e.g. terms like "mana", "water damage", "haul spell", "mythic", "hub" or "daily crates".
+Models can, and will likely need to, use Managers and Handlers, but also listen to events from `mc`, and occasionally also interact more directly with other aspects of Minecraft internals. They should not, however, have anything to do with e.g. how these concepts are presented on the screen. The basic representation of models is an abstract one, with classes tailored to describing the Wynncraft world in Wynncraft terms.
