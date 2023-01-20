@@ -1,3 +1,5 @@
+## Overall structure
+
 All Artemis code resides in a package starting with `com.wynntils`. The rest of this discussion will ignore that part of the package name.
 
 The top level contain these packages:
@@ -12,6 +14,8 @@ The top level contain these packages:
 * `gui`
 
 They all have well-specified content.
+
+### Components
 
 Artemis consists of a well-specified hierarchy of "components". It looks like this:
 ```
@@ -32,13 +36,19 @@ Features, Functions, Commands, Screens
 
 Finally, **Features, Functions, Commands, Screens** are what the user will actually interact with. They use primarily Models, but sometimes also Managers, to provide their functionality. 
 
-**Features** is the main basic unit for the added-value functionality that Wynntils provide the Wynncraft player. See [features](#features).
+* **Features** is the main basic unit for the added-value functionality that Wynntils provide the Wynncraft player. See [features](#features).
 
-**Functions** can be used to provide information to "info boxes". See [functions](#functions).
+* **Functions** can be used to provide information to "info boxes". See [functions](#functions).
 
-**Commands** are the chat `/commands` that Wynntils provides. See [commands](#commands).
+* **Commands** are the chat `/commands` that Wynntils provides. See [commands](#commands).
 
-**Screens** are the basic GUI unit of Minecraft. See [gui](#gui).
+* **Screens** are the basic GUI unit of Minecraft. See [gui](#gui).
+
+### General remarks
+
+In the code, whenever we need to hard-code a list where the order does not matter, we strive to keep such lists sorted alphabetically. This can be for instance in the registration of components, or the i18n translations in the json resource files. Always check surrounding code for signs of alphabetic sorting, and adhere to it if present, when adding code to such lists.
+
+## Structure of components
 
 ### `core`
 
@@ -96,6 +106,16 @@ Models can, and will likely need to, use Managers and Handlers, but also listen 
 ### `features`
 
 **Features** is the main basic unit for the added-value functionality that Wynntils provide the Wynncraft player. Features can be individually turned on and off, and can also have internal configuration values to tweak their behavior. Features are classified according to a Category, which is used to help the user navigate the configuration screen. A prototypical Feature queries one or more Models, and interacts with Minecraft internals, typically by listening to `mc.event` events, and updates the Minecraft client experience in a way that makes the Wynncraft gameplay better.
+
+The majority of the Features reside in the `features.user` package. Apart from this, there are `features.debug` and `features.statemanaged`. The status of these Features is contested, since they do not really fit well into the architecture. It is likely this will change in the future, so Feature will become synonymous with what is today "UserFeature".
+
+Features with a category is placed in a sub-package corresponding to their category. Features without a category is placed directly in `features.user`. 
+
+Currently, the design policy has been that a feature is self-contained within a single class/file. This has lead some more complex features to become quite large. A policy for how to split up such features might be needed in the future.
+
+Features should extend one of the three base implementations of `Feature`: `UserFeature`, `DebugFeature` or `StateManagedFeature`, corresponding to which kind of feature this is.
+
+Every feature must be registered in `core.features.FeatureRegistry`.
 
 ### `functions`
 
