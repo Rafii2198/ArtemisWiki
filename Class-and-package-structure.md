@@ -1,15 +1,15 @@
 All Artemis code resides in a package starting with `com.wynntils`. The rest of this discussion will ignore that part of the package name.
 
 The top level contain these packages:
-* `commands`
 * `core`
+* `utils`
+* `mc`
+* `handlers`
+* `models`
 * `features`
 * `functions`
+* `commands`
 * `gui`
-* `handlers`
-* `mc`
-* `models`
-* `utils`
 
 They all have well-specified content.
 
@@ -33,3 +33,8 @@ Core contains:
 
 Core also contains the main entry point WynntilsMod, which also provides some high-level functionality to the entire system such as logging.
 
+### `util`
+
+Util contains general utility classes, and general support types. To belong here, a class must not depend on anything specific to Minecraft or to Wynncraft. Examples include math, string manipulation, file system utils, and abstract functional interfaces. 
+
+Minecraft-specific utils belong in `mc.utils`. Wynncraft-specific utils belong in `wynn.util` (subject to change!).
