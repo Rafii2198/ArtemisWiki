@@ -101,9 +101,18 @@ Models can, and will likely need to, use Managers and Handlers, but also listen 
 
 **Functions** can be used to provide information to "info boxes". They are typically either simple util-like classes, or a shallow view of a Model.
 
+Each individual function is represented by a class. To avoid cluttering the package with hundereds of small classes, they are combined according to area in a handful of "holder" classes, which contain nothing but nested (static inner) classes, all extending `Function`.
+
+Every function must be registered in `core.functions.FunctionManager`.
+
 ### `commands`
 
 **Commands** are the chat `/commands` that Wynntils provides. 
+
+The `commands` package contain one class per command, all extending `CommandBase`.
+
+Every command must be registered in `core.commands.ClientCommandManager`.
+
 
 ### `gui` (**Screens**)
 
