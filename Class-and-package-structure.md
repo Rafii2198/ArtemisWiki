@@ -13,6 +13,17 @@ The top level contain these packages:
 
 They all have well-specified content.
 
+Artemis consists of a well-specified hierarchy of "components". It looks like this:
+```
+                Managers
+                   ^
+                Handlers
+                   ^
+                Models
+                   ^
+Features, Functions, Commands, Screens
+```
+
 ### `core`
 
 Core is responsible for the framework/skeleton upon which the rest of the Wynntils mod depends. It does not deal with anything specifically related to Wynncraft, and could in theory be used to build another, similar mod for other kinds of servers. 
