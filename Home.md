@@ -8,6 +8,7 @@ Welcome to the Artemis project wiki!
 ### Development plans / notes
 * [[Formal checking wish list]]
 * [[Legacy Wynntils features]]
+* [[Remaining functionality in Legacy to be ported]]
 
 ### Other resources
 * [[Archive]]
