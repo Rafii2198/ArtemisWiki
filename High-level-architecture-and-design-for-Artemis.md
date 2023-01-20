@@ -1,3 +1,8 @@
+**Update 2023:** This document was written before the Artemis development started. In places it refers to the "current" practice, in what we know call Wynntils Legacy (the 1.12 version). Some terms have changed over the course of Artemis development, but overall the document still describes the overall architectural decisions for Artemis quite well.
+
+---
+
+
 Here are some, hopefully non-controversial, suggestions on how we should think about a new port.
 
 ## Intermediate layer for mixins
