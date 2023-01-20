@@ -103,8 +103,6 @@ Mc contains the parts of Artemis that is highly tied to Minecraft internals. As 
 Mc contains:
 * `mixin`
 * `event`
-* `objects`
-* `utils`
 
 The `mc.mixin` package contains all our mixins, and only mixins. (There are also two subdirectories `accessors` and `invokers`, for pure accessor and invoker mixins).
 
@@ -164,7 +162,6 @@ Every function must be registered in `core.functions.FunctionManager`.
 The `commands` package contain one class per command, all extending `CommandBase`.
 
 Every command must be registered in `core.commands.ClientCommandManager`.
-
 
 ### `gui` (**Screens**)
 
