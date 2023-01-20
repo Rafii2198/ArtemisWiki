@@ -72,9 +72,29 @@ Core also contains the main entry point WynntilsMod, which also provides some hi
 
 ### `util`
 
-Util contains general utility classes, and general support types. To belong here, a class must not depend on anything specific to Minecraft or to Wynncraft. Examples include math, string manipulation, file system utils, and abstract functional interfaces. 
+Util contains general utility classes, and general support types. 
 
-Minecraft-specific utils belong in `mc.utils`. Wynncraft-specific utils belong in `wynn.util` (subject to change!).
+Util contains:
+
+* `mc`
+* `wynn`
+* `render`
+* `colors`
+* `type`
+
+They have the following contents:
+
+* In `util.mc`, there are Minecraft-specific utilities. Examples include `Component` to `String` conversion, or `ItemStack` manipulation. `util.mc.type` is for datatype classes that are tightly coupled to Minecraft internals.
+
+* In `util.wynn`, there are utilities related to the Wynncraft model. Examples include parsing coordinates, or generating a percentage color scale.
+
+* The `util.render` package contain our rendering code. 
+
+* `util.colors` include code related to color handling, outside that of Minecraft's color handling.
+
+* The `util.type` package contains generic datatype constructions, and functional interfaces.
+
+* And finally, the top-level `util` package itself contains generic utility classes. To belong here, a class must not depend on anything specific to Minecraft or to Wynncraft. Examples include math, string manipulation, file system utils, and abstract functional interfaces. 
 
 ### `mc`
 
@@ -90,7 +110,7 @@ The `mc.mixin` package contains all our mixins, and only mixins. (There are also
 
 Mixin classes should be `public abstract`, and mixin methods should be `private`. `@Inject` mixins should be used, if at all possible. The method name should be the target method name followed by `Pre` or `Post`, depending on if the injection is at `HEAD` or `RETURN`. The mixin method should only call `EventFactory.on<BaseEventName>`, and possibly cancel the mixin if the event is cancelled. The `EventFactory.on<BaseEventName>` method should create and post a new event of type `<BaseEventName>Event`. Exceptions from these rules are allowed if absolutely needed, but should be kept to a minimum. Keeping to this system serves both to minimize conflict with other mods, to make the code easy to follow due to the conventions, and to facilitate debugging and hot-swapping of code.
 
-The `mc.event` package contain all events sent from the mixins. `utils` contains some Minecraft-tied utilities, like `Component` to `String` conversion, `ItemStack` manipulation etc, and `objects` finally contain a few helper classes that are tightly coupled to Minecraft internals.
+The `mc.event` package contain all events sent from the mixins.
 
 ### `handlers`
 
