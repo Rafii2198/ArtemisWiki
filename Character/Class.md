@@ -12,17 +12,17 @@ Returns your current character class.
 
 This function has 2 _optional_ arguments.
 
-- uppercase(Boolean) → Whether the returned value should be in uppercase. **Default: false**
-- ShowReskinnedName(Boolean) → Whether the returned value should represend reskinned class name instead. **Default: false**
+- uppercase(Boolean) → Whether the returned value should be all in uppercase. **Default: false**
+- showReskinnedName(Boolean) → Whether the returned value should represend reskinned class name instead. **Default: false**
 
 ## Schematics
 
 ```js
-SOULPOINT_TIMER_S() → (Integer)
+CALSS(<uppercase>;<showReskinnedName>) → (String)
 ```
 
 ## Example
 
 ```js
-SOULPOINT_TIMER_S → 35
+Class → "shaman"
 ```
