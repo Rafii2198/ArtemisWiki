@@ -18,7 +18,7 @@ This function has 2 _optional_ arguments.
 ## Schematics
 
 ```js
-CALSS(<uppercase>;<showReskinnedName>) → (String)
+CLASS(<uppercase>;<showReskinnedName>) → (String)
 ```
 
 ## Example
