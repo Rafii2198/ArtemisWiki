@@ -17,7 +17,7 @@ This function has 1 _optional_ argument.
 ## Schematics
 
 ```js
-AREA_DAMAGE_AVERAGE() → (Double)
+AREA_DAMAGE_AVERAGE(<seconds>) → (Double)
 ```
 
 ## Example
