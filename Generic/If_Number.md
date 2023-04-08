@@ -6,7 +6,7 @@
 
 ## Description
 
-Based on condition, returns the first values if comparison is true, otherwise return second value.
+Based on condition, returns the first value if the comparison is true, otherwise return second value.
 
 ## Arguments
 

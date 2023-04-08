@@ -6,7 +6,7 @@
 
 ## Description
 
-Based on condition, returns the first values if comparison is true, otherwise return second value.
+Based on condition, returns the first value if the comparison is true, otherwise return second value.
 
 ## Arguments
 
@@ -25,5 +25,5 @@ IF_STRING(<condition>; <ifTrue>; <ifFalse>) → (String)
 ## Example
 
 ```js
-IF_NUMBER(TRUE;"To be";"Or not to be") → To be
+IF_STRING(TRUE;"To be";"Or not to be") → To be
 ```
