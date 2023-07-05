@@ -18,11 +18,11 @@ This function has 2 **required** arguments.
 ## Schematics
 
 ```js
-EQUALS(<first>; <second>) → (Boolean)
+STRING_EQUALS(<first>; <second>) → (Boolean)
 ```
 
 ## Example
 
 ```js
-EQUALS("Hello";"World") → FALSE
+STRING_EQUALS("Hello";"World") → FALSE
 ```
